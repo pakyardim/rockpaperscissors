@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/rock.png">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <title>Rock Paper Scissors</title>
+
+</head>
+
+<body>
+  <h1 id="title">ROCK PAPER SCISSORS</h1>
+
+  <div class="game">
+
+    <div class="player side">
+      <h2>PLAYER</h2>
+
+      <h1 id="playerScore">0</h1>
+
+    </div>
+
+    <div class="game-side">
+      <img src="images/rock.png" class="player-img" alt="rock">
+      <img src="images/rock.png" class="comp-img" alt="rock">
+
+      <h2 class="winner">PLAYER WON!</h3>
+
+    </div>
+
+    <div class="computer side">
+      <h2>COMPUTER</h2>
+      <h1 id="computerScore">0</h1>
+
+    </div>
+  </div>
+
+  <div class="buttons">
+
+
+    <div class="leftButtons">
+      <button type="button" name="rock" class="rock playButton"></button>
+      <button type="button" name="paper" class="paper playButton"></button>
+      <button type="button" name="scissors" class="scissors playButton"></button>
+    </div>
+
+    <button type="button" name="reset" class="resetButton">RESET</button>
+  </div>
+  <button type="button" name="button" class="startButton">PLAY</button>
+
+  <script type="text/javascript" src="app.js">
+  </script>
+</body>
+
+</html>

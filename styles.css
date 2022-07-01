@@ -1,0 +1,200 @@
+body{
+  text-align: center;
+  background-color: #283149;
+  height:100vh;
+  overflow: hidden;
+}
+
+h1{
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+}
+
+
+
+img{
+  height: 7rem;
+  width: 7rem;
+  margin: 0 1rem;
+}
+
+
+.player-img{
+  display: none;
+}
+
+.comp-img{
+  transform: scaleX(-1);
+  display: none;
+}
+
+.game-side{
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  top:10rem;
+  left: 2rem;
+}
+
+.winner{
+  display: none;
+  color: #DBEDF3;
+  grid-column: 1/-1;
+  font-family: "Arvo", cursive;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.game{
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 10rem;
+}
+
+.side{
+  color: #DA0463;
+  font-size: 3rem;
+  font-family: 'Arvo', cursive;
+}
+
+.startButton{
+  position:relative;
+  bottom:5rem;
+  font-family: 'Arvo', cursive;
+  font-size: 2rem;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.resetButton{
+  margin: 0 18rem;
+  font-size: 2rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  display: none;
+}
+
+.leftButtons{
+  display: flex;
+  margin: 0 5rem;
+}
+
+.rock{
+  background-image: url("images/rock.png");
+  background-size: cover;
+
+}
+.paper{
+  background-image: url("images/paper.png");
+  background-size: cover;
+}
+.scissors{
+  background-image: url("images/scissors.png");
+  background-size: cover;
+}
+
+.playButton{
+  display: none;
+  margin: 0 0.3rem;
+}
+
+button{
+  outline: none;
+  border: 10px solid #404B69;
+  border-radius: 15px;
+  display: inline-block;
+  width: 9.5rem;
+  height: 9.5rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #DBEDF3;
+}
+
+button:hover{
+  background-color: #283149;
+}
+
+
+
+/* laptop size */
+@media(max-width: 1540px){
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  .winner{
+    font-size: 1.5rem;
+  }
+  .playButton{
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  .resetButton{
+    width: 7.5rem;
+    height: 7.5rem;
+    margin: 0 15rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+
+/* tablet size */
+@media(max-width: 1000px){
+  .game{
+    margin: 5rem 60px;
+  }
+  h1{
+    font-size: 3.5rem;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+
+  .winner{
+    font-size: 1rem;
+  }
+  .playButton{
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .leftButtons{
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+
+  .resetButton{
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    margin-right: 7.5rem;
+  }
+
+  .player-img, .comp-img{
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+
+  .game-side{
+    top:10rem;
+  }
+}
