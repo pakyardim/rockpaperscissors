@@ -2,7 +2,7 @@
 
 Built with:
 
-  - <strong>Javascript</strong>
+  - <strong>JavaScript</strong>
   
 
 ### Get the code
