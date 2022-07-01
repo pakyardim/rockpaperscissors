@@ -9,5 +9,7 @@ Built with:
 
     git clone https://github.com/pakyardim/rockpaperscissors.git
 
+### Play the game
 
+    https://pakyardim.github.io/rockpaperscissors/
 
